@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ADOPS-Transport: herramienta personal para copiar archivos seleccionados a Google Drive y comprobar la integridad de las copias.">
+  <meta name="referrer" content="no-referrer">
+  <title>ADOPS-Transport · Transferencia de archivos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="header wrap">
+    <a class="wordmark" href="./" aria-label="ADOPS-Transport, inicio"><span class="mark" aria-hidden="true">A</span> ADOPS-Transport</a>
+    <nav aria-label="Navegación principal"><a href="privacy.html">Privacidad</a></nav>
+  </header>
+  <main id="contenido" class="wrap">
+    <section class="hero" aria-labelledby="titulo">
+      <p class="eyebrow">Herramienta de uso personal</p>
+      <h1 id="titulo">Copias verificadas.<br>Archivos bajo tu control.</h1>
+      <p class="lead">ADOPS-Transport copia archivos seleccionados desde el equipo del titular a su Google Drive, comprueba la integridad de las copias y conserva un registro de cada transferencia.</p>
+      <a class="button" href="privacy.html">Consultar la política de privacidad <span aria-hidden="true">↗</span></a>
+      <p class="caption">Este sitio ofrece información sobre la herramienta y sus prácticas de datos.</p>
+    </section>
+    <section class="section" aria-labelledby="funcionamiento">
+      <div class="section-title"><p class="eyebrow">Funcionamiento</p><h2 id="funcionamiento">Del archivo seleccionado<br>a una copia comprobada.</h2></div>
+      <ol class="steps">
+        <li><h3>Detectar cambios</h3><p>El programa observa únicamente los directorios y tipos de archivo configurados por el titular. Espera a que el archivo permanezca estable antes de crear una instantánea.</p></li>
+        <li><h3>Transferir y comprobar</h3><p>Utiliza una conexión autorizada con Google Drive para cargar la copia y descargarla de nuevo, comparando su huella SHA-256.</p></li>
+        <li><h3>Conservar versiones</h3><p>Registra tamaños, fechas, identificadores y resultados. Las modificaciones posteriores se guardan como versiones nuevas; los originales se conservan.</p></li>
+      </ol>
+    </section>
+    <section class="note" aria-labelledby="control">
+      <h2 id="control">Autorización y control</h2>
+      <p>La herramienta funciona en el equipo del titular mediante una tarea programada. Requiere que el equipo esté encendido, con sesión iniciada y conexión a internet. El titular administra los destinos y puede detener el programa o revocar su autorización desde la cuenta de Google.</p>
+      <p>Las copias se guardan en las carpetas de Drive configuradas, con los permisos que tengan esas carpetas. Su consulta posterior desde herramientas conectadas, incluida ChatGPT, depende de la autorización del titular y se explica en la <a href="privacy.html">política de privacidad</a>.</p>
+    </section>
+    <section id="condiciones" class="section compact" aria-labelledby="condiciones-titulo">
+      <div class="section-title"><p class="eyebrow">Alcance de uso</p><h2 id="condiciones-titulo">Una instalación personal.</h2></div>
+      <div><p>ADOPS-Transport es una herramienta administrada por el titular de la cuenta que la autoriza. Este sitio no ofrece registros, cargas de archivos ni acceso a las copias privadas.</p><p>Una transferencia comprobada acredita la integridad de los archivos copiados. La estabilidad de un archivo no acredita que su contenido o un conjunto de documentos esté terminado.</p></div>
+    </section>
+  </main>
+  <footer class="footer wrap"><span>ADOPS-Transport</span><div><a href="privacy.html">Política de privacidad</a><a href="#condiciones">Condiciones de uso</a></div></footer>
+</body>
+</html>
